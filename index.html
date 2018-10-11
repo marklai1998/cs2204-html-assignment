@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="UTF-8">
+    <title>City's cake - Home</title>
+</head>
+
+<body>
+    <!-- Start of Header -->
+    <header>
+        <img src="./images/logo.png" alt="logo" />
+        <div>CITY's CAKE</div>
+    </header>
+    <!-- End of Header -->
+    <!-- Start of Nav -->
+    <nav>
+        <img src="./images/viewlist.png" alt="viewlist" />
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="order.html">ORDER</a></li>
+            <li><a href="about_us.html">ABOUT US</a></li>
+            <li><a href="#">TERMS OF USE</a></li>
+        </ul>
+    </nav>
+    <!-- End of Nav -->
+    <div>
+        <video autoplay muted>
+            <source src="https://courses.cs.cityu.edu.hk/cs2204/chocolate.mp4" type="video/mp4" />
+        </video>
+    </div>
+    <div>
+        <!-- legend and fieldset are deprecated at HTML5, will do it via css -->
+        <div>Order Information</div>
+        <div>
+            <form action="order.html" method="get">
+                <!-- Align the fields -->
+                <table>
+                    <tr>
+                        <td>
+                            <label for="tel">Tel No.</label>
+                        </td>
+                        <td>
+                            <input type="text" id="tel" name="tel" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="pu_date">Pick Up Date</label>
+                        </td>
+                        <td>
+                            <input type="date" id="pu_date" name="pu_date" />
+                        </td>
+                    </tr>
+                </table>
+                <label for="delivery">Delivery</label>
+                <input type="radio" name="pu_method" id="delivery" value="delivery" />
+                <label for="pick_up">Pick Up</label>
+                <input type="radio" name="pu_method" id="pick_up" value="pick_up" />
+                <input type="submit" value="Submit" />
+                <input type="reset" value="Clear" />
+            </form>
+        </div>
+    </div>
+    <div>
+        <img src="images/Buccellator.jpg" alt="buccellator" />
+        <h1>Bucellator</h1>
+        <span>Nutrition Information</span>
+        <table>
+            <tr>
+                <th>Amount per 100g</th>
+                <th>%</th>
+            </tr>
+            <tr>
+                <td>Carbohydrate</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>Protein</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td>Fat</td>
+                <td>25</td>
+            </tr>
+            <tr>
+                <td>Cholesterol</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>Total may not add to 100%</td>
+                <td>52</td>
+            </tr>
+        </table>
+    </div>
+    <!-- Start of Footer -->
+    <footer>
+        <hr />
+        <span>@CityU 2017 source of images and text from Wikipedia & courtesy of all-free-download.com</span>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="order.html">ORDER</a></li>
+            <li><a href="about_us.html">ABOUT US</a></li>
+            <li><a href="#">TERMS OF USE</a></li>
+        </ul>
+    </footer>
+    <!-- End of Footer -->
+</body>
+
+</html>

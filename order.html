@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="UTF-8">
+    <title>City's cake - Order</title>
+</head>
+
+<body>
+    <!-- Start of Header -->
+    <header>
+        <img src="./images/logo.png" alt="logo" />
+        <div>CITY's CAKE</div>
+    </header>
+    <!-- End of Header -->
+    <!-- Start of Nav -->
+    <nav>
+        <img src="./images/viewlist.png" alt="viewlist" />
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="order.html">ORDER</a></li>
+            <li><a href="about_us.html">ABOUT US</a></li>
+            <li><a href="#">TERMS OF USE</a></li>
+        </ul>
+    </nav>
+    <!-- End of Nav -->
+    <div>
+        <!-- legend and fieldset are deprecated at HTML5, will do it via css -->
+        <form action="print.html" method="get">
+            <div>
+                <div>Order Information</div>
+                <div>
+                    <label for="tel">Tel No.</label><input type="text" id="tel" name="tel" />
+                    <label for="pu_date">Pick Up Date</label><input type="date" id="pu_date" name="pu_date" />
+                    <br />
+                    <label for="delivery">Delivery</label>
+                    <input type="radio" name="pu_method" id="delivery" value="delivery" />
+                    <label for="pick_up">Pick Up</label>
+                    <input type="radio" name="pu_method" id="pick_up" value="pick_up" />
+                </div>
+            </div>
+            <div>
+                <img src="images/PoundLayer.jpg" alt="PoundLayer" />
+                <img src="images/Strawberry.jpg" alt="Strawberry" />
+                <img src="images/Buccellator.jpg" alt="Buccellator" />
+                <img src="images/ChocolateGlazed.jpg" alt="ChocolateGlazed" />
+                <img src="images/Birthday.jpg" alt="Birthday" />
+            </div>
+            <div>
+                <label for="order_no">Order No.</label><input type="text" id="order_no" name="order_no" value='34428621' />
+                <table>
+                    <tr>
+                        <th>Cake Name</th>
+                        <th>Qty</th>
+                    </tr>
+                    <tr>
+                        <td><label for="buccellator">Buccellator</label></td>
+                        <td><input type="number" id="buccellator" name="buccellator" value='1' /></td>
+                    </tr>
+                    <tr>
+                        <td><label for="strawberry">Strawberry</label></td>
+                        <td><input type="number" id="strawberry" name="strawberry" value='2' /></td>
+                    </tr>
+                    <tr>
+                        <td><label for="total">Total</label></td>
+                        <td><input type="number" id="total" name="total" value='3' /></td>
+                    </tr>
+                </table>
+            </div>
+            <input type="submit" value="Print Invoice" />
+        </form>
+    </div>
+    <!-- Start of Footer -->
+    <footer>
+        <hr />
+        <span>@CityU 2017 source of images and text from Wikipedia & courtesy of all-free-download.com</span>
+        <ul>
+            <li><a href='index.html'>HOME</a></li>
+            <li><a href='order.html'>ORDER</a></li>
+            <li><a href='about_us.html'>ABOUT US</a></li>
+            <li><a href="#">TERMS OF USE</a></li>
+        </ul>
+    </footer>
+    <!-- End of Footer -->
+</body>
+
+</html>
