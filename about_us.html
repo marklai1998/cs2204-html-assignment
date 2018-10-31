@@ -4,34 +4,259 @@
 <head>
     <meta charset="UTF-8">
     <title>City's cake - About Us</title>
+    <link rel="stylesheet" type="text/css" href="./stylesheets/style.css">
+    <link rel="stylesheet" type="text/css" href="./stylesheets/layout.css">
+    <link rel="stylesheet" type="text/css" href="./stylesheets/about_us.css">
 </head>
 
 <body>
     <!-- Start of Header -->
     <header>
-        <img src="./images/logo.png" alt="logo" />
-        <div>CITY's CAKE</div>
+        <div class="logo">
+            <img src="./images/logo.png" alt="logo" class='logo' />
+            <div class='title'>CITY's CAKE</div>
+        </div>
+        <!-- Start of Nav -->
+        <nav>
+            <div class="nav_btn">
+                <img src="./images/viewlist.png" alt="viewlist" />
+            </div>
+            <ul class="list">
+                <a href='index.html'>
+                    <li>HOME</li>
+                </a>
+                <a href='order.html'>
+                    <li>ORDER</li>
+                </a>
+                <a href='about_us.html'>
+                    <li>ABOUT US</li>
+                </a>
+                <a href='#'>
+                    <li>TERMS OF USE</li>
+                </a>
+            </ul>
+        </nav>
+        <!-- End of Nav -->
     </header>
     <!-- End of Header -->
-    <!-- Start of Nav -->
-    <nav>
-        <img src="./images/viewlist.png" alt="viewlist" />
-        <ul>
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="order.html">ORDER</a></li>
-            <li><a href="about_us.html">ABOUT US</a></li>
-            <li><a href="#">TERMS OF USE</a></li>
-        </ul>
-    </nav>
-    <!-- End of Nav -->
-
-    Name: Mark Lai<br />
-    Study at: CityU computer science Year 2
-
+    <div class="box">
+        <table class="info_table">
+            <tr>
+                <td>Name:</td>
+                <td>Lai Kam To,Mark</td>
+            </tr>
+            <tr>
+                <td>Study at:</td>
+                <td>CityU computer science Year 2</td>
+            </tr>
+        </table>
+    </div>
+    <div class="box">
+        <div class="title">How styles are grouped</div>
+        <div class="content">
+            <ol>
+                <li>test</li>
+            </ol>
+        </div>
+    </div>
+    <div class="page_grid">
+        <div class="box">
+            <div class="title">Global style</div>
+            <div class="content">
+                <ol class="feature_list">
+                    <li>
+                        <span class="positioning">Positioning</span>
+                        margin: 0 auto;<br />
+                        Used to center the content at every pages
+                        <br />
+                        <span class="line">layout.css line105</span>
+                    </li>
+                    <li>
+                        <span class="css3">css3</span>
+                        transition: 0.5s<br />
+                        Used to create the transition when input change
+                        <br />
+                        <span class="line">style.css line12,28</span>
+                    </li>
+                    <li>
+                        <span class="css3">css3</span>
+                        border-radius<br />
+                        Used to create rounded corner to create better look input
+                        <br />
+                        <span class="line">style.css line24,36</span>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div class="box">
+            <div class="title">Header</div>
+            <div class="content">
+                <ol class="feature_list">
+                    <li><span class="css3">css3</span>
+                        box-shadow<br />
+                        Used to drop the shadow at the header
+                        <br />
+                        <span class="line">layout.css line2</span>
+                    </li>
+                    <li><span class="css3">css3</span><span class="positioning">Positioning</span>
+                        display: flex<br />
+                        Used to arrange the width of logo and nav
+                        <br />
+                        <span class="line">layout.css line4</span>
+                    </li>
+                    <li>
+                        <span class="positioning">Positioning</span>
+                        position: absolute; position: relative;<br />
+                        Used to overlay "City's Cake" text onto logo
+                        <br />
+                        <span class="line">layout.css line9,14</span>
+                    </li>
+                    <li>
+                        <span class="css3">css3</span>
+                        transform: rotate(-20deg)<br />
+                        Used to rotate "City's Cake" text at the logo
+                        <br />
+                        <span class="line">layout.css line19</span>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div class="box">
+            <div class="title">Nav</div>
+            <div class="content">
+                <ol class="feature_list">
+                    <li>
+                        <span class="positioning">Positioning</span>
+                        position: absolute; top: 60px;<br />
+                        Used to overlay the nav menu
+                        <br />
+                        <span class="line">layout.css line46</span>
+                    </li>
+                    <li>
+                        <span class="css3">css3</span>
+                        transition: height 0.5s<br />
+                        Used to create the show transition on nav
+                        <br />
+                        <span class="line">layout.css line54,67</span>
+                    </li>
+                    <li><span class="css3">css3</span>
+                        box-shadow<br />
+                        Used to drop the shadow at the nav menu
+                        <br />
+                        <span class="line">layout.css line56</span>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div class="box">
+            <div class="title">Footer</div>
+            <div class="content">
+                <ol class="feature_list">
+                    <li>
+                        <span class="positioning">Positioning</span>
+                        position: fixed<br />
+                        Used to force the footer at the bottom
+                        <br />
+                        <span class="line">layout.css line81</span>
+                    </li>
+                    <li>
+                        <span class="positioning">Positioning</span>
+                        float: left;<br />
+                        Used to force list into one line
+                        <br />
+                        <span class="line">layout.css line94</span>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div class="box">
+            <div class="title">Home</div>
+            <div class="content">
+                <ol class="feature_list">
+                    <li><span class="css3">css3</span><span class="positioning">Positioning</span>
+                        display: flex; flex-direction: row;<br />
+                        Used to make the width of the preview photo responsive
+                        <br />
+                        <span class="line">index.css line19</span>
+                    </li>
+                    <li><span class="css3">css3</span>
+                        box-shadow: 0 0 5px rgba(170, 170, 170, 0.7);<br />
+                        Used to drop the shadow of the container
+                        <br />
+                        <span class="line">index.css line21</span>
+                    </li>
+                    <li><span class="css3">css3</span><span class="positioning">Positioning</span>
+                        flex-shrink: 0;<br />
+                        Used to fix the width of the info side thus only the photo width will change
+                        <br />
+                        <span class="line">index.css line34</span>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div class="box">
+            <div class="title">Order</div>
+            <div class="content">
+                <ol class="feature_list">
+                    <li><span class="css3">css3</span><span class="positioning">Positioning</span>
+                        display: grid; grid-template-columns: auto auto auto; grid-gap: 10px;<br />
+                        Used to create the grid arrangement using css way
+                        <br />
+                        <span class="line">order.css line22,23,24</span>
+                    </li>
+                    <li><span class="css3">css3</span><span class="positioning">Positioning</span>
+                        display: flex; flex-direction: row;<br />
+                        Used to make the width of select area responsive
+                        <br />
+                        <span class="line">order.css line15,16</span>
+                    </li>
+                    <li><span class="css3">css3</span><span class="positioning">Positioning</span>
+                        flex-shrink: 0;<br />
+                        Used to fix the width of the info side thus only the select area width will change
+                        <br />
+                        <span class="line">order.css line30</span>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div class="box">
+            <div class="title">About Us</div>
+            <div class="content">
+                <ol class="feature_list">
+                    <li><span class="css3">css3</span><span class="positioning">Positioning</span>
+                        display: grid; grid-template-columns: auto auto; grid-gap: 10px;<br />
+                        Used to create the grid arrangement using css way
+                        <br />
+                        <span class="line">about_us.css line19,20,21</span>
+                    </li>
+                    <li>
+                        <span class="css3">css3</span>
+                        border-radius<br />
+                        Used to create rounded corner to create better look input
+                        <br />
+                        <span class="line">style.css line44,54</span>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div class="box">
+            <div class="title">Print</div>
+            <div class="content">
+                <ol class="feature_list">
+                    <li>
+                        <span class="positioning">Positioning</span>
+                        overflow: auto;<br />
+                        Used to reset the float
+                        <br />
+                        <span class="line">print.css line29</span>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
 
     <!-- Start of Footer -->
     <footer>
-        <hr />
         <span>@CityU 2017 source of images and text from Wikipedia & courtesy of all-free-download.com</span>
         <ul>
             <li><a href='index.html'>HOME</a></li>

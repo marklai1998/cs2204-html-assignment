@@ -1,0 +1,56 @@
+.info_table {
+  padding: 10px;
+}
+
+.box .title {
+  font-size: 20px;
+  padding: 10px 15px;
+  font-weight: bold;
+  color: #333;
+  border-bottom: rgb(216, 216, 216) 1px solid;
+}
+
+.box .content {
+  padding: 5px 15px;
+}
+
+.page_grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+.feature_list {
+  margin: 0;
+  padding: 10px 15px;
+}
+
+.feature_list li {
+  margin-bottom: 10px;
+}
+
+.feature_list .line {
+  color: rgb(109, 109, 109);
+}
+
+.positioning {
+  font-size: 9px;
+  padding: 5px;
+  background-color: cadetblue;
+  position: relative;
+  color: #fff;
+  top: -3px;
+  border-radius: 3px;
+}
+
+.css3 {
+  font-size: 9px;
+  padding: 5px;
+  background-color: rgb(109, 141, 243);
+  position: relative;
+  color: #fff;
+  top: -3px;
+  border-radius: 3px;
+  margin-right: 5px; 
+}

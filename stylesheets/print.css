@@ -1,0 +1,30 @@
+.order_box {
+  padding: 10px 15px;
+  border-bottom: rgb(216, 216, 216) 1px solid;
+}
+
+.order_table {
+  border: rgb(216, 216, 216) 1px solid;
+  margin: 10px auto;
+}
+
+.order_table th {
+  background-color: rgb(233, 233, 233);
+  border-bottom: rgb(216, 216, 216) 1px solid;
+  padding: 5px 0;
+  margin: 0;
+}
+
+.order_table td {
+  border-bottom: rgb(231, 231, 231) 1px solid;
+  padding: 3px 0;
+  margin: 0;
+}
+
+.order_table tbody tr:nth-child(odd) td {
+  background-color: rgb(250, 250, 250);
+}
+
+.clearfix {
+  overflow: auto;
+}

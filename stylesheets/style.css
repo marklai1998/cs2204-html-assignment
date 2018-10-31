@@ -1,0 +1,42 @@
+body {
+  font-family: Microsoft JhengHei, sans-serif;
+  padding: 0;
+  margin: 0px;
+  background-color: #e6e6e6;
+  padding-bottom: 60px;
+}
+
+a {
+  color: #222;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+a:hover {
+  color: #757575;
+  text-decoration: none;
+}
+
+input,
+select {
+  height: 25px;
+  margin: 10px 0;
+  border-radius: 1px;
+  padding: 0 5px;
+  border-width: 0 0 2px 0;
+  border-bottom: #e4e4e4 2px solid;
+  transition: 0.5s;
+}
+
+input[type=submit],
+input[type=reset] {
+  background-color: #2196f3;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 3px;
+  border: 0;
+}
+
+img {
+  width: 100%;
+}

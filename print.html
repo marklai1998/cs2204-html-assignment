@@ -4,66 +4,85 @@
 <head>
     <meta charset="UTF-8">
     <title>City's cake - Print</title>
+    <link rel="stylesheet" type="text/css" href="./stylesheets/style.css">
+    <link rel="stylesheet" type="text/css" href="./stylesheets/layout.css">
+    <link rel="stylesheet" type="text/css" href="./stylesheets/print.css">
 </head>
 
 <body>
     <!-- Start of Header -->
     <header>
-        <img src="./images/logo.png" alt="logo" />
-        <div>CITY's CAKE</div>
+        <div class="logo">
+            <img src="./images/logo.png" alt="logo" class='logo' />
+            <div class='title'>CITY's CAKE</div>
+        </div>
+        <!-- Start of Nav -->
+        <nav>
+            <div class="nav_btn">
+                <img src="./images/viewlist.png" alt="viewlist" />
+            </div>
+            <ul class="list">
+                <a href='index.html'>
+                    <li>HOME</li>
+                </a>
+                <a href='order.html'>
+                    <li>ORDER</li>
+                </a>
+                <a href='about_us.html'>
+                    <li>ABOUT US</li>
+                </a>
+                <a href='#'>
+                    <li>TERMS OF USE</li>
+                </a>
+            </ul>
+        </nav>
+        <!-- End of Nav -->
     </header>
     <!-- End of Header -->
-    <!-- Start of Nav -->
-    <nav>
-        <img src="./images/viewlist.png" alt="viewlist" />
-        <ul>
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="order.html">ORDER</a></li>
-            <li><a href="about_us.html">ABOUT US</a></li>
-            <li><a href="#">TERMS OF USE</a></li>
-        </ul>
-    </nav>
-    <!-- End of Nav -->
-    <div>
-        <label for="tel">Order (Tel) No.</label><input type="text" id="tel" name="tel" value="97829783" />
-        <label for="pu_date">Pick Up Date</label><input type="date" id="pu_date" name="pu_date" />
-        <br />
-        <label for="delivery">Delivery</label>
-        <input type="radio" name="pu_method" id="delivery" value="delivery" />
-        <label for="pick_up">Pick Up</label>
-        <input type="radio" name="pu_method" id="pick_up" value="pick_up" />
-        <table>
-            <tr>
-                <th>Cake Description</th>
-                <th>Qty</th>
-                <th>Price</th>
-            </tr>
-            <tr>
-                <td>Buccellator</td>
-                <td>1</td>
-                <td>128</td>
-            </tr>
-            <tr>
-                <td>Strawberry</td>
-                <td>2</td>
-                <td>466</td>
-            </tr>
-            <tr>
-                <td>Total</td>
-                <td>3</td>
-                <td>594</td>
-            </tr>
-        </table>
+    <div class="container">
+        <div class="box clearfix">
+            <div class="order_box">
+                <label for="tel">Order (Tel) No.</label><input type="text" id="tel" name="tel" value="97829783" />
+                <label for="pu_date">Pick Up Date</label><input type="date" id="pu_date" name="pu_date" />
+                <br />
+                <label for="delivery">Delivery</label>
+                <input type="radio" name="pu_method" id="delivery" value="delivery" />
+                <label for="pick_up">Pick Up</label>
+                <input type="radio" name="pu_method" id="pick_up" value="pick_up" />
+            </div>
+
+            <table class="order_table">
+                <tr>
+                    <th>Cake Description</th>
+                    <th>Qty</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <td>Buccellator</td>
+                    <td>1</td>
+                    <td>128</td>
+                </tr>
+                <tr>
+                    <td>Strawberry</td>
+                    <td>2</td>
+                    <td>466</td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td>3</td>
+                    <td>594</td>
+                </tr>
+            </table>
+        </div>
     </div>
     <!-- Start of Footer -->
     <footer>
-        <hr />
         <span>@CityU 2017 source of images and text from Wikipedia & courtesy of all-free-download.com</span>
         <ul>
             <li><a href='index.html'>HOME</a></li>
             <li><a href='order.html'>ORDER</a></li>
             <li><a href='about_us.html'>ABOUT US</a></li>
-            <li><a href="#">TERMS OF USE</a></li>
+            <li><a href='#'>TERMS OF USE</a></li>
         </ul>
     </footer>
     <!-- End of Footer -->
