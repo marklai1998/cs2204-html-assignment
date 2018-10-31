@@ -54,8 +54,34 @@
     <div class="box">
         <div class="title">How styles are grouped</div>
         <div class="content">
-            <ol>
-                <li>test</li>
+            <ol class="feature_list">
+                <li>
+                    .css file are spilt into multiple files to reduce sizes<br />
+                    styles.css is for global styling eg.body background<br />
+                    layout.css is for layout components such as header, footer and container
+                    each page has their own css file, so pages don't need to load other unnecessary css
+                </li>
+                <li>
+                    element element selector is used to make sure the css class with the same name has their own style
+                    eg. .title<br />
+                    if the selector nested too deep, the element deserve its own class
+                </li>
+                <li>
+                    :after selector is used to append element style without create a actual empty div
+                </li>
+                <li>
+                    :nth-child(odd) selector is used to select and color the odd row of a table without manually add
+                    the class to them
+                </li>
+                <li>
+                    element+element selector is used to select the element sibling element
+                    the classes
+                </li>
+                <li>
+                    element[type] selector is used to select the element with special html tag without manually add the
+                    class to them
+                    the classes
+                </li>
             </ol>
         </div>
     </div>
