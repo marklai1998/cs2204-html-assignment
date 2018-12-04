@@ -42,37 +42,23 @@
     <div class="container">
         <div class="box clearfix">
             <div class="order_box">
-                <label for="tel">Order (Tel) No.</label><input type="text" id="tel" name="tel" value="97829783" />
-                <label for="pu_date">Pick Up Date</label><input type="date" id="pu_date" name="pu_date" />
+                <label for="tel">Order (Tel) No.</label><input type="text" id="tel" name="tel" value="97829783" disabled/>
+                <label for="pu_date">Pick Up Date</label><input type="date" id="pu_date" name="pu_date" disabled/>
                 <br />
                 <label for="delivery">Delivery</label>
-                <input type="radio" name="pu_method" id="delivery" value="delivery" />
+                <input type="radio" name="pu_method" id="delivery" value="delivery" disabled/>
                 <label for="pick_up">Pick Up</label>
-                <input type="radio" name="pu_method" id="pick_up" value="pick_up" />
+                <input type="radio" name="pu_method" id="pick_up" value="pick_up" disabled/>
             </div>
 
-            <table class="order_table">
+            <table class="order_table" id="order_table">
                 <tr>
                     <th>Cake Description</th>
                     <th>Qty</th>
                     <th>Price</th>
                 </tr>
-                <tr>
-                    <td>Buccellator</td>
-                    <td>1</td>
-                    <td>128</td>
-                </tr>
-                <tr>
-                    <td>Strawberry</td>
-                    <td>2</td>
-                    <td>466</td>
-                </tr>
-                <tr>
-                    <td>Total</td>
-                    <td>3</td>
-                    <td>594</td>
-                </tr>
             </table>
+            <button type='button' class='clear' id='clear'>Clear Invoice</button>
         </div>
     </div>
     <!-- Start of Footer -->
@@ -86,6 +72,8 @@
         </ul>
     </footer>
     <!-- End of Footer -->
+    <script src="./javascripts/cakemenu.js"></script>
+    <script src="./javascripts/print.js"></script>
 </body>
 
 </html>

@@ -29,7 +29,8 @@ select {
 }
 
 input[type=submit],
-input[type=reset] {
+input[type=reset],
+button {
   background-color: #2196f3;
   color: #fff;
   padding: 5px 10px;

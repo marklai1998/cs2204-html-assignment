@@ -41,9 +41,7 @@
     <!-- End of Header -->
     <div class="container">
         <div class="box video-playback">
-            <video autoplay muted>
-                <source src="https://courses.cs.cityu.edu.hk/cs2204/chocolate.mp4" type="video/mp4" />
-            </video>
+            <video id='playback' src="https://courses.cs.cityu.edu.hk/cs2204/chocolate.mp4" type="video/mp4" autoplay muted></video>
         </div>
         <div class="box">
             <div class="order_box">
@@ -81,10 +79,10 @@
             </div>
             <div class="flex-wrapper">
                 <div class="cake_image">
-                    <img src="images/Buccellator.jpg" alt="buccellator" />
+                    <img src="images/Buccellator.jpg" alt="buccellator" id='slide_image'/>
                 </div>
                 <div class="cake_information">
-                    <h1>Bucellator</h1>
+                    <h1 id='cake_name'>Bucellator</h1>
                     <div class="title">Nutrition Information</div>
                     <table class="nutrition_table">
                         <tr>
@@ -93,23 +91,23 @@
                         </tr>
                         <tr>
                             <td>Carbohydrate</td>
-                            <td>20</td>
+                            <td id='Carbohydrate'>20</td>
                         </tr>
                         <tr>
                             <td>Protein</td>
-                            <td>7</td>
+                            <td id='Protein'>7</td>
                         </tr>
                         <tr>
                             <td>Fat</td>
-                            <td>25</td>
+                            <td id='Fat'>25</td>
                         </tr>
                         <tr>
                             <td>Cholesterol</td>
-                            <td>0</td>
+                            <td id='Cholesterol'>0</td>
                         </tr>
                         <tr>
                             <td>Total may not add to 100%</td>
-                            <td>52</td>
+                            <td id='Total'>52</td>
                         </tr>
                     </table>
                 </div>
@@ -127,6 +125,7 @@
         </ul>
     </footer>
     <!-- End of Footer -->
+    <script src="./javascripts/cakemenu.js"></script>
+    <script src="./javascripts/index.js"></script>
 </body>
-
 </html>

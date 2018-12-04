@@ -28,3 +28,13 @@
 .clearfix {
   overflow: auto;
 }
+
+.clear {
+  margin: 10px;
+}
+
+@media print {
+  .clear {
+    display: none;
+  }
+}

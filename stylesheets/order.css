@@ -30,3 +30,25 @@
   flex-shrink: 0;
   padding: 15px;
 }
+
+.error {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  justify-content: center;
+  display: none;
+}
+
+.error span {
+  background-color: #fff;
+  height: 20px;
+  padding: 10px 15px;
+  box-shadow: 0 0 5px rgba(170, 170, 170, 0.7);
+}
+
+.error.show {
+  display: flex;
+}

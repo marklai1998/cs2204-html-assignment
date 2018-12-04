@@ -40,69 +40,58 @@
     </header>
     <!-- End of Header -->
     <div class="container">
+        <div id="error" class="error" onClick="removeError()">
+            <span>
+                Please fill in all information
+            </span>
+        </div>
         <div class="box">
             <!-- legend and fieldset are deprecated at HTML5, will do it via css -->
-            <form action="print.html" method="get">
+            <form action="print.html" method="get" id='order_form' name="order_form" onsubmit="return checkForm()">
                 <div class="order_box">
                     <!-- legend and fieldset are deprecated at HTML5, will do it via css -->
                     <div class="title">Order Information</div>
                     <div class="content">
-                        <form action="order.html" method="get">
-                            <!-- Align the fields -->
-                            <table>
-                                <tr>
-                                    <td>
-                                        <label for="tel">Tel No.</label>
-                                    </td>
-                                    <td>
-                                        <input type="text" id="tel" name="tel" />
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <label for="pu_date">Pick Up Date</label>
-                                    </td>
-                                    <td>
-                                        <input type="date" id="pu_date" name="pu_date" />
-                                    </td>
-                                </tr>
-                            </table>
-                            <label for="delivery">Delivery</label>
-                            <input type="radio" name="pu_method" id="delivery" value="delivery" />
-                            <label for="pick_up">Pick Up</label>
-                            <input type="radio" name="pu_method" id="pick_up" value="pick_up" /><br />
-                        </form>
+                        <!-- Align the fields -->
+                        <table>
+                            <tr>
+                                <td>
+                                    <label for="tel">Tel No.</label>
+                                </td>
+                                <td>
+                                    <input type="text" id="tel" name="tel" onchange="updateOrderNo()"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="pu_date">Pick Up Date</label>
+                                </td>
+                                <td>
+                                    <input type="date" id="pu_date" name="pu_date" />
+                                </td>
+                            </tr>
+                        </table>
+                        <label for="delivery">Delivery</label>
+                        <input type="radio" name="pu_method" id="delivery" value="delivery" />
+                        <label for="pick_up">Pick Up</label>
+                        <input type="radio" name="pu_method" id="pick_up" value="pick_up" /><br />
                     </div>
                 </div>
                 <div class="flex_wrapper">
-                    <div class="cake_grid">
-                        <div class="item">
-                            <img src="images/PoundLayer.jpg" alt="PoundLayer" />
-                        </div>
-                        <div class="item">
-                            <img src="images/Strawberry.jpg" alt="Strawberry" /></div>
-                        <div class="item"><img src="images/Buccellator.jpg" alt="Buccellator" /></div>
-                        <div class="item"><img src="images/ChocolateGlazed.jpg" alt="ChocolateGlazed" /></div>
-                        <div class="item"><img src="images/Birthday.jpg" alt="Birthday" /></div>
+                    <div class="cake_grid" id='cake_grid'>
                     </div>
                     <div class="info">
-                        <label for="order_no">Order No.</label><input type="text" id="order_no" name="order_no" value='34428621' />
-                        <table>
+                        <label for="order_no">Order No.</label><input type="text" id="order_no" name="order_no" disabled/>
+                        <table id='order_table'>
                             <tr>
                                 <th>Cake Name</th>
                                 <th>Qty</th>
                             </tr>
-                            <tr>
-                                <td><label for="buccellator">Buccellator</label></td>
-                                <td><input type="number" id="buccellator" name="buccellator" value='1' /></td>
-                            </tr>
-                            <tr>
-                                <td><label for="strawberry">Strawberry</label></td>
-                                <td><input type="number" id="strawberry" name="strawberry" value='2' /></td>
-                            </tr>
+                        </table>
+                        <table>
                             <tr>
                                 <td><label for="total">Total</label></td>
-                                <td><input type="number" id="total" name="total" value='3' /></td>
+                                <td><input type="number" id="total" name="total" value='0' disabled/></td>
                             </tr>
                         </table>
                         <input type="submit" value="Print Invoice" />
@@ -122,6 +111,8 @@
         </ul>
     </footer>
     <!-- End of Footer -->
+    <script src="./javascripts/cakemenu.js"></script>
+    <script src="./javascripts/order.js"></script>
 </body>
 
 </html>
